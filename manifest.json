@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "teddit-image-previews",
+  "version": "1",
+
+  "description": "Improved image previews for teddit.net",
+
+  "content_scripts": [
+    {
+      "matches": ["*://teddit.net/r/*/comments/*"],
+      "js": ["build/teddit_image_previews.js"]
+    }
+  ],
+
+  "browser_specific_settings": {
+      "gecko": {
+          "id": "teddit-image-previews@twenty.com"
+    }
+  }
+}
