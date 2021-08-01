@@ -1,6 +1,6 @@
 # teddit-image-previews
 
-TODO: addon store link
+<a href="https://addons.mozilla.org/en-US/firefox/addon/teddit-image-previews/"><img src=https://blog.mozilla.org/addons/files/2020/04/get-the-addon-fx-apr-2020.svg height="50"></a>
 
 Improved image previews for teddit.net, for posts with multiple images
 
@@ -16,7 +16,7 @@ See also (and 'forked') from: https://github.com/twenty5151/tedditnav
 
 ## Install
 
-1. TODO
+1. Download from https://addons.mozilla.org/en-US/firefox/addon/teddit-image-previews/
 2. Go to `teddit.net`, open a post with multiple images and enjoy
 
 ## Develop
