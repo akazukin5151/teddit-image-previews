@@ -17,6 +17,7 @@ See also (and 'forked') from: https://github.com/twenty5151/tedditnav
 ## Install
 
 1. Download from https://addons.mozilla.org/en-US/firefox/addon/teddit-image-previews/
+    - Or download the xpi file from releases
 2. Go to `teddit.net`, open a post with multiple images and enjoy
 
 ## Develop
@@ -25,9 +26,13 @@ See also (and 'forked') from: https://github.com/twenty5151/tedditnav
 3. Build with `npx webpack --mode=production` for release or `npx webpack --mode=development` for eval-source-map debugging
 
 ### Release
-0. Bump version in `manifest.json`
-1. `zip -r -FS build/teddit_image_previews.zip * --exclude '*.git*' --exclude '*node_modules*'`
-2. Upload the zip file to mozilla
+0. Clear the build directory and run `npx webpack --mode=production`
+1. Bump version in `manifest.json`
+2. `zip -r -FS build/teddit_image_previews.zip * --exclude '*.git*' --exclude '*node_modules*'`
+3. Upload the zip file to mozilla
+4. Download the xpi file and upload to Github releases
+    - Go to https://addons.mozilla.org/en-US/developers/addon/teddit-image-previews/versions/
+    - Select the latest version and download the xpi file
 
 ## Privacy
 
