@@ -63,7 +63,7 @@ function previousImage(deliberatelyToggled: boolean) {
 
 function make_button(label: string, onclick: () => void) {
     let btn = document.createElement("button")
-    btn.innerHTML = label
+    btn.textContent = label
     btn.style.background = 'none'
     btn.style.border = 'none'
     btn.style.fontSize = 'small'
