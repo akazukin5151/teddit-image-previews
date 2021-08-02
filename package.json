@@ -1,4 +1,10 @@
 {
+  "scripts": {
+      "build": "npx webpack --mode=production",
+      "dev": "npx webpack --mode=development",
+      "clean": "rm -r build/",
+      "release": "zip -r -FS build/teddit_image_previews.zip build/ LICENSE manifest.json README.md"
+  },
   "dependencies": {
     "ts-loader": "^9.2.2",
     "webpack": "^5.37.1",

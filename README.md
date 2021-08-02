@@ -23,14 +23,15 @@ See also (and 'forked') from: https://github.com/twenty5151/tedditnav
 ## Develop
 1. Git clone
 2. Install the dependencies (typescript, webpack) with `npm ci`
-3. Build with `npx webpack --mode=production` for release or `npx webpack --mode=development` for eval-source-map debugging
+3. Build with `npm run build` for release or `npm run dev` for eval-source-map debugging
 
 ### Release
-0. Clear the build directory and run `npx webpack --mode=production`
 1. Bump version in `manifest.json`
-2. `zip -r -FS build/teddit_image_previews.zip * --exclude '*.git*' --exclude '*node_modules*'`
-3. Upload the zip file to mozilla
-4. Download the xpi file and upload to Github releases
+2. `npm run clean`
+3. `npm run build`
+4. `npm run release`
+5. Upload the zip file to mozilla
+6. Download the xpi file and upload to Github releases
     - Go to https://addons.mozilla.org/en-US/developers/addon/teddit-image-previews/versions/
     - Select the latest version and download the xpi file
 
