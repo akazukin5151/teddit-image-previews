@@ -30,7 +30,7 @@ See also (and 'forked') from: https://github.com/twenty5151/tedditnav
 2. `npm run clean`
 3. `npm run build`
 4. `npm run release`
-5. Upload the zip file to mozilla
+5. Upload build/teddit_image_previews.zip to mozilla and provide the source code with build/source.zip
 6. Download the xpi file and upload to Github releases
     - Go to https://addons.mozilla.org/en-US/developers/addon/teddit-image-previews/versions/
     - Select the latest version and download the xpi file

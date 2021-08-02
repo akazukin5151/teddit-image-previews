@@ -3,7 +3,8 @@
       "build": "npx webpack --mode=production",
       "dev": "npx webpack --mode=development",
       "clean": "rm -r build/",
-      "release": "zip -r -FS build/teddit_image_previews.zip build/ LICENSE manifest.json README.md"
+      "release": "zip -r -FS build/teddit_image_previews.zip build/ LICENSE manifest.json README.md",
+      "zipsource": "zip -r -FS build/source.zip * --exclude '*.git*' --exclude '*node_modules*'"
   },
   "dependencies": {
     "ts-loader": "^9.2.2",
