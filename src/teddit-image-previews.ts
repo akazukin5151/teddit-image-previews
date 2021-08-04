@@ -21,10 +21,8 @@ function swap(a: Element, b: Element) {
 function enlargeImage(image: Element, shouldSwap: boolean, deliberatelyToggled: boolean) {
     const img = elementToImg(image)
     img.src = bigUrls[currentImage]
-    // TODO: doesn't this mess up the aspect ratio?
-    // gallery has margin-left of 60px
-    img.width = document.documentElement.clientWidth - 60
-    img.height = document.documentElement.clientHeight
+    let height = document.documentElement.clientHeight
+    img.style.setProperty('max-height', height.toString() + 'px', 'important')
     if (shouldSwap) {
         swap(gallery.children[currentImage], gallery.children[0])
     }
@@ -36,9 +34,7 @@ function enlargeImage(image: Element, shouldSwap: boolean, deliberatelyToggled: 
 function restoreCurrentImage() {
     const img = elementToImg(pictures[currentImage])
     img.src = smallUrls[currentImage]
-    // defaults
-    img.width = 108
-    img.height = 61
+    // No need to restore size again, because the enlarge function changes only max
     // Swap with all previous images in increasing order
     for (let i = 0; i !== currentImage; i++) {
         swap(gallery.children[currentImage], gallery.children[i])
