@@ -1,5 +1,7 @@
 # teddit-image-previews
 
+[![status](https://img.shields.io/badge/status-active-green)](https://img.shields.io/badge/status-active-green)
+
 <a href="https://addons.mozilla.org/en-US/firefox/addon/teddit-image-previews/"><img src=https://blog.mozilla.org/addons/files/2020/04/get-the-addon-fx-apr-2020.svg height="50"></a>
 
 Improved image previews for teddit.net, for posts with multiple images
