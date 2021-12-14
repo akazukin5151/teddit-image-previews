@@ -10,7 +10,7 @@ Based on [RES](https://github.com/honestbleeps/Reddit-Enhancement-Suite)
 
 teddit is an open source frontend for reddit (like invidio and nitter)
 
-See also (and 'forked') from: https://github.com/twenty5151/tedditnav
+See also (and 'forked') from: https://github.com/akazukin5151/tedditnav
 
 ## Features
 1. 'd' to preview next image
