@@ -1,6 +1,7 @@
 const config = {
     entry: {
         teddit_image_previews: './src/teddit-image-previews.ts',
+        options: './src/options.ts'
     },
     output: {
         filename: '[name].js',

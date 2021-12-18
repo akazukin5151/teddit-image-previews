@@ -1,3 +1,5 @@
+import { browser } from "webextension-polyfill-ts"
+
 const gallery = document.querySelectorAll('.gallery')[0]
 const pictures: Element[] = Array.from(gallery.children)
 const smallUrls: string[] = pictures.map(e => elementToImg(e).src)
@@ -84,11 +86,13 @@ function add_buttons() {
 }
 
 function main() {
-    document.addEventListener('keypress', (event) => {
-        if (event.key === 'a') {
-            return previousImage(true)
-        } else if (event.key === 'd') {
-            return nextImage(true)
+    document.addEventListener('keypress', async (event) => {
+        const settings = await browser.storage.sync.get()
+        switch (event.key) {
+            case settings.prev_image:
+                return previousImage(true)
+            case settings.next_image:
+                return nextImage(true)
         }
     })
     enlargeImage(pictures[0], true, false)

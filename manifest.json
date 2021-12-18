@@ -13,6 +13,10 @@
     }
   ],
 
+  "permissions": ["storage"],
+  "options_ui": {
+      "page": "build/options.html"
+  },
   "browser_specific_settings": {
       "gecko": {
           "id": "teddit-image-previews@twenty.com"
