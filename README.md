@@ -13,14 +13,16 @@ teddit is an open source frontend for reddit (like invidio and nitter)
 See also (and 'forked') from: https://github.com/akazukin5151/tedditnav
 
 ## Features
-1. 'd' to preview next image
-2. 'a' to preview previous image
+1. Press key to preview next image
+2. Press key to preview previous image
+3. Next and previous buttons on top the gallery for mouse usage
 
 ## Install
 
 1. Download from https://addons.mozilla.org/en-US/firefox/addon/teddit-image-previews/
     - Or download the xpi file from releases
-2. Go to `teddit.net`, open a post with multiple images and enjoy
+2. Go to `about:addons -> teddit-image-previews -> Preferences` and enter your key bindings then save it
+3. Go to `teddit.net`, open a post with multiple images and enjoy
 
 ## Develop
 1. Git clone
